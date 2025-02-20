@@ -1,0 +1,365 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 16px / 26px;
+    font-family: Arial,Verdana,sans-serif;
+    overflow-x: hidden;
+}
+.page1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(page1.jpg);
+    width: 100%;
+    height: 991px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    font-family: Arial,Verdana,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    top: 0;
+    padding: 1em;
+    padding-top: 2em;
+}
+.header-logo{
+    margin-left: 21em;
+    cursor: pointer;
+}
+.menu{
+    margin-left: -30px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: #fff;
+    margin-right: 80px;
+    }
+.menu ul li{
+    position: relative;
+    display: inline-block;
+}
+.menu ul li span{
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 1px 0;
+}
+.menu ul li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0;
+    height: 0.5px;
+    background-color: white;
+    transition: width 0.6s ease-in-out ;
+}
+.menu ul li span:hover::after {
+    width: 100%;
+}
+.shop{
+    display: flex;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-left: 270px;
+    margin-right: 1px;
+    cursor: pointer;
+    }
+    .shop p{
+        position: relative;
+    display: inline-block;
+    }
+.shop p::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0px;
+        width: 0;
+        height: 0.5px;
+        background-color: white;
+        transition: width 0.6s ease-in-out ;
+    }
+.shop p:hover::after {
+        width: 100%;
+    }   
+.hambureg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 23px;
+    cursor: pointer;
+}
+.bottom-left{
+    text-align: left;
+    position: absolute;
+    bottom: 15%;
+    left: 300px;
+    color: #fff;
+    font: 20px / 38px D-DIN-Medium, Arial, Verdana, sans-serif;
+    color: #FFFFFF;
+    margin: 0px !important
+}
+.bottom-left h1{
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 0%;
+}
+#btn{
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    width: 160px;
+    height: 55px;
+    cursor: pointer;
+    transition: color 0.6s ease-in-out;
+    z-index: 1;
+}
+#btn::before {
+    content: "";
+    position: absolute;
+    top: -100%; /* Start hidden below */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: top 0.4s ease-in-out;
+    z-index: -1;
+}
+#btn:hover{
+    color: black;
+    background: #fff;
+}
+#btn:hover::before {
+    top: 0; /* Move up to cover button */
+}
+.page2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(page2.jpg);
+    width: 100%;
+    height: 991px;
+}
+.bottom-left1{
+    text-align: left;
+    position: absolute;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    left: 300px;
+    margin-top: 425px;
+    font: 20px / 38px D-DIN-Medium, Arial, Verdana, sans-serif;
+    color: #FFFFFF;
+}
+.bottom-left1 h1{
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 0%;
+}
+.page3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(page3.jpg);
+    width: 100%;
+    height: 991px;
+}
+.page3 h1{
+    margin-top: 0px;
+}
+.bottom-left2{
+    text-align: left;
+    position: absolute;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    left: 300px;
+    margin-top: 425px;
+    font: 20px / 38px D-DIN-Medium, Arial, Verdana, sans-serif;
+    color: #FFFFFF;
+}
+.page4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(page4.jpg);
+    width: 100%;
+    height: 991px;
+}
+.page4 h1{
+    margin-top: 0px;
+}
+.bottom-left3{
+    text-align: left;
+    position: absolute;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    left: 300px;
+    margin-top: 425px;
+    font: 20px / 38px D-DIN-Medium, Arial, Verdana, sans-serif;
+    color: #FFFFFF;
+}
+.page5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(page5.jpg);
+    width: 100%;
+    height: 991px;
+}
+.page5 h1{
+    margin-top: 0px;
+}
+.bottom-left4{
+    text-align: left;
+    position: absolute;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    left: 300px;
+    margin-top: 425px;
+    font: 20px / 38px D-DIN-Medium, Arial, Verdana, sans-serif;
+    color: #FFFFFF;
+}
+.page6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(page6.jpg);
+    width: 100%;
+    height: 991px;
+}
+.bottom-left5{
+    text-align: left;
+    position: absolute;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    left: 300px;
+    margin-top: 425px;
+    font: 20px / 38px D-DIN-Medium, Arial, Verdana, sans-serif;
+    color: #FFFFFF;
+}
+.page6 h1{
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 0;
+}
+.page7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(page7.jpg);
+    width: 100%;
+    height: 991px;
+}
+.bottom-left6{
+    text-align: left;
+    position: absolute;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    left: 300px;
+    margin-top: 425px;
+    font: 20px / 38px D-DIN-Medium, Arial, Verdana, sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.page7 h1{
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 0;
+}
+.page8{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(page8.jpg);
+    width: 100%;
+    height: 991px;
+}
+.bottom-left7{
+    text-align: left;
+    position: absolute;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    left: 300px;
+    margin-top: 425px;
+    font: 20px / 38px D-DIN-Medium, Arial, Verdana, sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.page8 h1{
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 0;
+}
+.page9{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url(page9.jpg);
+    width: 100%;
+    height: 991px;
+}
+.bottom-left8{
+    text-align: left;
+    position: absolute;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    left: 300px;
+    margin-top: 425px;
+    font: 20px / 38px D-DIN-Medium, Arial, Verdana, sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.page9 h1{
+    font-size: 48px;
+    line-height: 48px;
+    margin-top: 0;
+}
+.footer{
+    background: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: #fff;
+    font-size: 11px;
+    height: 80px;
+    font-family: Arial,Verdana,sans-serif;
+}
