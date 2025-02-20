@@ -363,3 +363,9 @@ body{
     height: 80px;
     font-family: Arial,Verdana,sans-serif;
 }
+#link{
+    cursor: pointer;
+}
+#link:hover{
+    color: gray;
+}
